@@ -20,7 +20,7 @@ export default async function verifyIdentity(key, reqBody) {
       resultArea.innerHTML =
         "O usuário não foi encontrado, por favor informe um usuário válido";
         console.error(res)
-      return true;
+      return false;
     } else if (status != 200) {
       showError(status);
       if (status == 401) {
