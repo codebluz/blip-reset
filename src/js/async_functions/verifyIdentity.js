@@ -1,4 +1,4 @@
-import { showError } from '../auxiliar_functions.js'
+import { showError, reloadPage } from '../auxiliar_functions.js'
 
 const resultArea = document.getElementById("result-request");
 
@@ -19,6 +19,7 @@ export default async function verifyIdentity(key, reqBody) {
       showError("400");
       resultArea.innerHTML =
         "O usuário não foi encontrado, por favor informe um usuário válido";
+        reloadPage();
         console.error(res)
       return false;
     } else if (status != 200) {
