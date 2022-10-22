@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reset User</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+        <!-- Favicon -->
+    <link rel="shortcut icon" href="./src/images/restart.png" type="image/x-icon">
+        <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="content-header container">
+        <img
+          src="./src/images/restart.png"
+          class="img-fluid "
+          alt="Leprechaun"
+          width="60px"
+        />
+        <h3 class="h3" data-aos="zoom-in" data-aos-duration="1000">Reset<span class="color-title-reset">User</span></h3>
+      </div>
+    </header>
+    <section class="main">
+      <div class="form-content" data-aos="zoom-in" data-aos-duration="1000">
+        <form>
+          <fieldset>
+            <div class="mb-3">
+              <label for="contact-id" class="form-label"
+                >ID do contato</label
+              >
+              <input
+                type="text"
+                id="contact-id"
+                class="form-control"
+                placeholder="Digite aqui..."
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="key-select" class="form-label">Key do bot</label>
+              <input
+              type="text"
+              id="key-select"
+              class="form-control"
+              placeholder="Digite aqui..."
+              required
+            />
+            </div>
+            <div class="mb-3">
+              <div class="form-check">
+              </div>
+            </div>
+            <div class="btn-status">
+              <button type="button" id="btn-exec" class="btn btn-outline-info" >Reset</button>
+              <div class="status-result bg-info text-white">Status</div>
+            </div>
+            
+          </fieldset>
+          
+        </form>
+        <textarea name="result-request" id="result-request" cols="50" rows="5" wrap disabled>Resultado...</textarea>
+      </div>
+      <div class="help-content">
+          <h5 class="h5 fw-semibold text-center">Não sabe como encontrar a key do bot e identificador do contato?</h5>
+          <img class="arrow" src="./src/images/down-arrow.gif" alt="down-arrow" width="50px">
+          <a href="https://help.blip.ai/hc/pt-br/articles/4474398352919-Como-encontrar-a-API-KEY-do-meu-bot-" target="_blank">Como encontrar a API-KEY do meu bot?</a>
+          <a href="https://help.blip.ai/hc/pt-br/articles/4474413647383-Como-encontrar-o-identificador-de-um-usu%C3%A1rio" target="_blank">Como encontrar o identificador de um usuário</a>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="content-footer container">
+        <p class="paragraph" >&copy;Bruno Luz</p>
+      </div>
+    </footer>
+    <script type="module" src="./main.js"></script>
+        <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+        <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+.header {
+  width: 100vw;
+  min-height: 10vh;
+  max-height: 10vh;
+  display: flex;
+  align-items: center;
+  background: rgb(0,212,255);
+  background: linear-gradient(18deg, rgba(0,212,255,1) 0%, rgba(143,237,242,1) 47%, rgba(63,125,232,1) 100%);
+}
+.main {
+  width: 100vw;
+  min-height: 80vh;
+}
+.footer {
+  width: 100vw;
+  min-height: 10vh;
+  max-height: 10vh;
+  display: flex;
+  align-items: center;
+  background: rgb(0,212,255);
+  background: linear-gradient(18deg, rgba(0,212,255,1) 0%, rgba(143,237,242,1) 47%, rgba(63,125,232,1) 100%);
+}
+.content-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #3f7de8;
+}
+.h3 {
+  margin: auto 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.h3:hover {
+  font-size: 32px
+}
+.color-title-reset {
+  color:#FFF;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+.form-content {
+  width: 600px;
+  height: 400px;
+  background-color: transparent;
+  border-radius: 20px;
+  border-top: 3px solid #3f7de8;
+  border-left: 3px solid #3f7de8;
+  border-bottom: 3px solid #8fedf2;
+  border-right: 3px solid #8fedf2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#contact-id,
+#key-select {
+  width: 340px;
+}
+.help-content {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #3f7de8;
+}
+.help-content .arrow {
+  margin: 0 auto;
+}
+.help-content a {
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.5s;
+  margin: 0 auto;
+}
+.help-content a:hover {
+  font-weight: bold;
+}
+.btn-status {
+  display:  flex;
+  justify-content: space-around;
+}
+.status-result {
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.paragraph {
+  margin: 0 auto;
+}
+#result-request {
+  margin-top: 10px;
+  overflow: auto;
+  background-color: transparent;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 5px;
+  
+}
+
+.content-footer {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  color: #3f7de8;
+}
+
+@media (max-width: 600px) {
+  .form-content {
+    width: 380px;
+  }
+}
+
+
