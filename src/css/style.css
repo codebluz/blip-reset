@@ -96,6 +96,9 @@
   background-color: transparent;
   text-align: center; 
 }
+.btn-exec {
+  border: 1px solid transparent;
+}
 .img-effect {
   width: 60px;
   transition: 0.5s;
