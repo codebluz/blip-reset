@@ -39,6 +39,7 @@ export default async function deleteVariables(key, identity, variables) {
         if (auxCont == variables.limit) {
           clearInterval(id);
           console.log("Todas as variáveis foram excluídas");
+          reloadPage();
           textForProcessing = resultArea.value;
           textForProcessing += `
           Variáveis excluídas com sucesso`;
@@ -47,6 +48,7 @@ export default async function deleteVariables(key, identity, variables) {
         }
       }
     }, 300);
+    
     //reloadPage();
   }
   

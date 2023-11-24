@@ -25,6 +25,7 @@ function showError(status) {
   }
   
   function reloadPage() {
+    console.log("Iniciando contador para reloadPage")
     setTimeout(() => {
       window.location.reload();
     }, 3000);

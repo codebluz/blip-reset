@@ -24,9 +24,9 @@ async function reset() {
     const contextVariables = await getContextVariables(key, reqBodyVarContext);
     if (!contextVariables) {
       showSuccess();
-      reloadPage();
+      // reloadPage();
     } else {
-      const returnDelete = await deleteVariables(key, idUser, contextVariables);
+      await deleteVariables(key, idUser, contextVariables);
     }
   }
 }
