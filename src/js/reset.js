@@ -29,7 +29,7 @@ async function reset() {
       const returnDelete = await deleteVariables(key, idUser, contextVariables);
     }
   }
-  reloadPage(); 
+  // reloadPage(); 
 }
 
 export { reset }
