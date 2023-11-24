@@ -44,7 +44,7 @@ export default async function deleteVariables(key, identity, variables) {
           Variáveis excluídas com sucesso`;
           resultArea.innerHTML = textForProcessing;
           showSuccess();
-          reloadPage();
+          // reloadPage();
         }
       }
     }, 300);
