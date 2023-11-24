@@ -27,10 +27,8 @@ async function reset() {
       reloadPage();
     } else {
       const returnDelete = await deleteVariables(key, idUser, contextVariables);
-      reloadPage();
     }
   }
-  // reloadPage(); 
 }
 
 export { reset }
