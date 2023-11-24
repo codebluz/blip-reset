@@ -47,7 +47,7 @@ export default async function deleteVariables(key, identity, variables) {
         }
       }
     }, 300);
-    reloadPage();
+    //reloadPage();
   }
   
   async function executeDelete(key, body) {
