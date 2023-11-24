@@ -27,7 +27,7 @@ function showError(status) {
   function reloadPage() {
     setTimeout(() => {
       window.location.reload();
-    }, 5000);
+    }, 3000);
   }
 
   export { showError, showSuccess, reloadPage }
